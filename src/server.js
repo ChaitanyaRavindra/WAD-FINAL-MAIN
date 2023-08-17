@@ -97,10 +97,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname,'../','html'))); // set the directory for static files
 
 // connect to the MongoDB database
-const connecttomongo=()=>{
+const connecttomongo=async()=>{
   try {
     
-    mongoose.connect('mongodb://127.0.0.1:27017/mydatabase', { useNewUrlParser: true });
+    await mongoose.connect('mongodb://127.0.0.1:27017/mydatabase', { useNewUrlParser: true });
   } catch (error) {
     
   }
