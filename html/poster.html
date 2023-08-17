@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Terressa Printing</title>
+    <link rel="stylesheet" type="text/css" href="css\posterStyle.css">
+  </head>
+  <body>
+      <header>
+
+          <div class ="main">
+            <div class="logo">
+                <img src="images\logo.png">
+            </div>
+            <ul>
+                <li class="active">
+                <a href="home.html">Home</a></li>
+                <li><a href="services.html">Services </a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            </div>
+            <div class="title">
+                <h1>POSTER</h1>
+                
+            </div>
+        </header>
+        <div class="content">
+            <p> High Quality Poster<br><br>
+                > A3 Sized poster <br><br>
+                > High Quality Material <br><br>
+                </p>
+        
+            
+        <!-- </div>
+        <div class="pic">
+            <img src="images\poster picture.jpg " width="200px" height="200px"alt="2">
+        </div> -->
+
+        <div class="pic" id="carousel">
+            <img src="images/poster picture.jpg" alt="Image 1">
+            <img src="images/poster 1.jpg" alt="Image 2">
+            <img src="images/poster 2.webp" alt="Image 3">
+        </div>
+        
+        <div class="button">
+            <a href="contact.html" >FIND A STORE</a>
+            <a href="about.html" >ABOUT US</a>
+
+        </div>
+
+        <div class="button99">
+                    
+            <a href="form.html"onclick="func()" >BUY</a>
+            <!-- <script>
+   
+                function func(){
+                    alert("Redirecting...")
+              }
+              
+            </script> -->
+        </div>
+        <script>
+            let index = 0;
+            const images = document.querySelectorAll("#carousel img");
+            
+            function nextImage() {
+              images[index].style.display = "none";
+              index = (index + 1) % images.length;
+              images[index].style.display = "block";
+            }
+            
+            setInterval(nextImage, 1500);
+          </script>
+
+        
+ 
+            
+    </body>
+</html>

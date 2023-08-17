@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+ <link rel="stylesheet" type="text/css" href="css\ch1.css">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    
+    
+<header class="site-header clearfix">
+ 
+  <div class ="main">
+    <div class="logo">
+        <img src="images\logo.png">
+    </div>
+    
+    
+    <ul>
+        <li class="active">
+        <a href="home.html">Home</a></li>
+        <li><a href="services.html">Services </a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    </div>
+ 
+ <section>
+  <div id="carousel">
+    <img src="images/poster 1.jpg" alt="Image 1">
+    <img src="images/standee.jpg" alt="Image 2">
+    <img src="images/soft_touch.jpg" alt="Image 3">
+  </div>
+  <div class="rightside"> 
+   <h1>STANDEE</h1>
+   <p>Get a custom made standee at an affordable price and free delivery on orders above Rs 500 only  </p>
+   <a href="form.html" >BUY</a>
+  </div>
+  
+  
+  
+
+ </section>
+ <script>
+  let index = 0;
+  const images = document.querySelectorAll("#carousel img");
+  
+  function nextImage() {
+    images[index].style.display = "none";
+    index = (index + 1) % images.length;
+    images[index].style.display = "block";
+  }
+  
+  setInterval(nextImage, 2000);
+</script>
+
+
+</header>
+</body>
+</html>

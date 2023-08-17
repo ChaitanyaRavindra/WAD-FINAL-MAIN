@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.5)) ,url(1.jpg);
+    height: 1000vh;
+    background-size: cover;
+    background-position:center ;
+    background-attachment: fixed;
+}
+ul{
+   float: right ;
+    list-style-type:  none; 
+    margin-top: 25px;
+
+}
+ul li {
+    display: inline-block;
+}
+ul li a{
+    text-decoration:none ;
+    color: rgb(255, 255, 255); 
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.logo img{
+    float:left;
+    width: 250px;
+    height: auto;
+    
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+} 
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.title h1{
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+
+}
+.title1 {color:white;
+         font-size:30px;
+         font-family: 'Libre Baskerville', serif;
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    transform: translate(-50%,-50%);}
+
+    .title2 {color:white;
+        font-family: 'Libre Baskerville', serif;
+  position: absolute;
+  top: 30%;
+  left: 17%;
+  transform: translate(-50%,-50%);}
+  
+  
+  .title3 {color:white;
+    font-size:20px;
+    font-family: 'Libre Baskerville', serif;
+position: absolute;
+top: 150%;
+left: 30%;
+transform: translate(-50%,-50%);}
+ 
+ .imm m{
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        position: absolute;
+top: 150%;
+left: 70%;
+transform: translate(-50%,-50%);
+      
+}
+
+.t45{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}  
+.t45 button{   font-size: 17px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); 
+    border-radius: 4px 4px 4px 4px;
+    padding: 20px 35px ; 
+}
+
+
+
+.t45 button:hover{
+      background: linear-gradient(57deg, #1E4D92, #00C6A7 );   
+}
+input{
+    font-size: 35px;
+}
+.buton{
+    
+    font-family: Arial, Helvetica, sans-serif;
+ font-weight: bolder;
+ font-size: large;
+}
+.button1{
+ position: absolute;
+ top: 72%;
+ left: 24%;
+ transform: translate(-50%,-50%);
+}
+.button1 a{
+ border: 1px solid rgb(0, 0, 0);
+ padding: 10px 30px;
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+ transition: 0.6s ease;
+ border: 1px solid transparent;
+ 
+}
+.button1 a:hover{
+ background-color: rgb(255, 245, 245);
+ color: rgb(0, 0, 0);
+
+}
+
+.button2{
+ position: absolute;
+ top: 72%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.button2 a{
+ border: 1px solid rgb(0, 0, 0);
+ padding: 10px 30px;
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+ transition: 0.6s ease;
+ border: 1px solid transparent;
+ 
+}
+.button2 a:hover{
+ background-color: rgb(255, 245, 245);
+ color: rgb(0, 0, 0);
+
+}
+
+.button3{
+ position: absolute;
+ top: 72%;
+ left: 75%;
+ transform: translate(-50%,-50%);
+}
+.button3 a{
+ border: 1px solid rgb(0, 0, 0);
+ padding: 10px 30px;
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+ transition: 0.6s ease;
+ border: 1px solid transparent;
+ 
+}
+.button3 a:hover{
+ background-color: rgb(255, 245, 245);
+ color: rgb(0, 0, 0);
+
+}
+.pix{
+ padding-top: 13.5%;
+ padding-left: 11%;
+ width:1000px;
+
+ 
+
+}

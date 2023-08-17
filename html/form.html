@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="form.css">
+    <script src="server.js"></script>
+    <script>
+        function validatePhoneNumber(phoneNumber) {
+            const phoneRegex = /^\d{10}$/;
+            return phoneRegex.test(phoneNumber);
+        }
+        function validateForm() {
+          const phoneNumberInput = document.getElementsByName('phoneNumber')[0];
+          const phoneNumber = phoneNumberInput.value;
+          const phoneNumberError = document.getElementById('phone-number-error');
+      
+          if (!validatePhoneNumber(phoneNumber)) {
+            phoneNumberError.innerHTML = 'Please enter a valid phone number';
+            return false;
+          } else {
+            phoneNumberError.innerHTML = '';
+            return true;
+          } 
+        }
+      </script>
+
+</head>
+<body>
+    
+
+<div class="container">
+
+    <form method="post" action="/submit-form" onsubmit="return validateForm()">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" name="fullName" placeholder="john doe" required>
+                </div>  
+                <div class="inputBox">
+                    <span>Phone number :</span>
+                    <input type="tel" name="phoneNumber" placeholder="1234 5678 90">
+                    <div id="phone-number-error" class="error"></div>
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" name="email" placeholder="example@example.com" required>
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" name="address" placeholder="room - street - locality" required>
+                </div>
+                <div class="inputBox">
+                    <span>products :</span>
+                    <!-- <input type="text" placeholder="mumbai"> -->
+                    <select name="product" id="#">
+                        <option style="width: 10;">Poster</label>
+                        <option >Lamination</option>
+                        <option >Standee</option>
+                    </select>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" name="state" placeholder="india" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" name="zipCode" placeholder="123 456" required>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <input type="submit" value="proceed to checkout" class="submit-btn"></a>
+       
+       
+    </form>
+    <!-- <script>
+        function func()
+        {
+            
+            alert("thank you for buying our product. Redirecting you back to the home page...");
+        }
+
+    </script> -->
+
+</div>    
+    
+</body>
+</html>
