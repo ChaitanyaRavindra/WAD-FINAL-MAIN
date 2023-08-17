@@ -97,15 +97,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname,'../','html'))); // set the directory for static files
 
 // connect to the MongoDB database
-const connecttomongo=async()=>{
-  try {
-    
-    await mongoose.connect('mongodb://127.0.0.1:27017/mydatabase', { useNewUrlParser: true });
-  } catch (error) {
-    
-  }
-}
-connecttomongo()
+
 
 
 // define the user schema
@@ -180,9 +172,9 @@ app.get("/test",(_req,res)=>{
 module.exports = app;
 
 // start the server
-app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Server started on port ${port}`);
+// });
 
 
 
