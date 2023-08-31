@@ -116,6 +116,7 @@ const User = new mongoose.model('User', userSchema);
 
 // handle the form submission
 app.post('/submit-form', async (req, res) => {
+  console.log("Request received");
   try {
     // create a new user based on the form data
     const user = new User({
@@ -160,8 +161,9 @@ app.post('/submit-form', async (req, res) => {
       }
     });
 
-    res.sendFile(__dirname + '../html/thanks.html');
+    res.status(200).sendFile(path.join(__dirname,'..','html','thanks.html'));
   } catch (err) {
+    console.log("error")
     console.log(err);
     res.status(500).send('Error saving user to database');
   }
