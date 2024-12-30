@@ -13,8 +13,8 @@ const port = 3000;
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'aryan.cs21@bmsce.ac.in',
-    pass: 'Aryan_311202'  // Consider using OAuth2 for better security
+    user: 'chaitanya.cs21@bmsce.ac.in',
+    pass: 'Ch@itanya3541'  // Consider using OAuth2 for better security
   }
 });
 
